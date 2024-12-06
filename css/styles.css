@@ -11,3 +11,7 @@ a.anchor {
     top: -50px;
     visibility: hidden;
 }
+
+.icon-padding {
+    padding: 5px;
+}
