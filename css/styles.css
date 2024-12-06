@@ -1,3 +1,8 @@
+* {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .founder {
     display: flex;
     flex-direction: column;
@@ -14,4 +19,8 @@ a.anchor {
 
 .icon-padding {
     padding: 5px;
+}
+
+.beach-image {
+    max-width: 100vw;
 }
