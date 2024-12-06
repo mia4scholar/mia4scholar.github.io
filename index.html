@@ -3,72 +3,86 @@ slideshow
 news links
 etc-->
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
-<title>Maracas Capital</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <style>
-html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-</style>
+  <title>Maracas Capital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+
+    .w3-tag,
+    .fa {
+      cursor: pointer
+    }
+
+    .w3-tag {
+      height: 15px;
+      width: 15px;
+      padding: 0;
+      margin-top: 6px
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
+  <!-- Navbar -->
+  <div class="w3-top">
     <div class="w3-bar w3-light-grey" style="display: flex; justify-content: space-between; align-items: center;">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
       <a href="#header" class="w3-bar-item w3-button">
-        <img src="/images/mcc.png" alt="Home" style ="width: 100px; height: auto;">
+        <img src="/images/mcc.png" alt="Home" style="width: 100px; height: auto;">
       </a>
 
       <div style="margin-left: auto; display: flex; gap: 16px; align-items: center;">
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button" title="About Us">About Us <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="#mission" class="w3-bar-item w3-button">Mission</a>
-            <a href="#founder" class="w3-bar-item w3-button">Founder</a>
-          </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="#mission" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Mission & Founder</a>
+        </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white"></div>
+          <a href="#partner" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Partner Criteria</a>
+        </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="#why" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Why Maracas</a>
         </div>
 
-      <!--Approach Dropdown-->
-        <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button" title="Approach">Our Approach <i class="fa fa-caret-down"></i></button>     
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-            <a href="#who" class="w3-bar-item w3-button">Partner Criteria</a>
-            <a href="#how" class="w3-bar-item w3-button">Acquisition Approach</a>
-          </div>
-        </div>
-  
         <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
-          <a href="#whyUs" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Why Maracas</a>
-        </div>
-      
-        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
-          <a href="#contactUs" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Contact Us</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Contact Us</a>
         </div>
       </div>
     </div>
-  
-  <!-- Navbar on small screens/phones -->
-  <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
-    <a href="#aboutUs" class="w3-bar-item w3-button">About Us</a>
-    <a href="#whyUs" class="w3-bar-item w3-button">Why Maracas</a>
-    <a href="#approach" class="w3-bar-item w3-button">Our Approach</a>
-    <a href="#contactUs" class="w3-bar-item w3-button">Contact</a>
-  </div>
-</div>
 
-<!--image header-->
-<div id ="header" class="w3-display-container w3-animate-opacity">
-    <video autoplay muted loop style="position: relative; width: 100%; height: auto; object-fit: cover; filter: grayscale(25%);">
-        <source src="/images/180607_A_115.mp4" type="video/mp4">
-        Your browser doesn't support the video tag.
+    <!-- Navbar on small screens/phones -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+      <a href="#mission" class="w3-bar-item w3-button">Mission & Founder</a>
+      <a href="#partner" class="w3-bar-item w3-button">Partner Criteria</a>
+      <a href="#why" class="w3-bar-item w3-button">Why Maracas</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+
+  <!--image header-->
+  <div id="header" class="w3-display-container w3-animate-opacity">
+    <video autoplay muted loop
+      style="position: relative; width: 100%; height: auto; object-fit: cover; filter: grayscale(25%);">
+      <source src="/images/180607_A_115.mp4" type="video/mp4">
+      Your browser doesn't support the video tag.
     </video>
 
     <div class="w3-container w3-display-upperleft w3-left w3-animate-opacity">
@@ -76,95 +90,103 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
         <img src="/images/mc logo.png" alt="Logo" style="width: 500px; height: auto;">
       </a>
     </div>
-    
+
     <div class="w3-container w3-display-bottomleft w3-animate-opacity">
-        <div class="content" style="position: relative; bottom: 40px; left: 40px;">
-            <h1 style="color:antiquewhite; font-size: x-large; left: 30px;">"Preserving Legacies, Empowering Futures:</h1>
-            <h11 style="color:antiquewhite; font-size: x-large; left: 50px;">Trust Maracas Capital to Be Your Partner in Transition." </h11>
-            <p style="color:burlywood; font-size: large;">Start Your Transition Journey Today</p>
-        </div>
+      <div class="content" style="position: relative; bottom: 40px; left: 40px;">
+        <h1 style="color:antiquewhite; font-size: x-large; left: 30px;">"Preserving Legacies, Empowering Futures:</h1>
+        <h11 style="color:antiquewhite; font-size: x-large; left: 50px;">Trust Maracas Capital to Be Your Partner in
+          Transition." </h11>
+        <p style="color:burlywood; font-size: large;">Start Your Transition Journey Today</p>
+      </div>
+    </div>
   </div>
-</div>
 
 
-<!--Content-->
+  <!--Content-->
   <div class="w3-content" style="max-width:1300px;margin-top:60px;margin-bottom:60px">
-<!--Mission-->
-  <div class="w3-container w3-row-padding" id="mission">
-    <div class="w3-center w3-padding-64">
-    <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Mission Statement</span>
+    <!--Mission-->
+    <div class="w3-container w3-row-padding">
+      <div class="w3-center w3-padding-64">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Our Mission Statement</span>
+      </div>
+      <div class="w3-content w3-center w3-padding-36">
+        <p class="w3-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.</p>
+      </div>
     </div>
-    <div class="w3-content w3-center w3-padding-36">
-    <p class="w3-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <!--Meet the Founder-->
+    <div class="w3-container w3-row-padding w3-center">
+      <div class="w3-center w3-padding-64">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Meet the Founder</span>
+      </div>
+
+      <div class="w3-half w3-container w3-margin-left">
+        <img src="/images/Chris Pitts.png" alt="Christopher Pitts" style="width:50%" class="w3-circle">
+        <h3>Christopher Pitts</h3>
+        <p>Christopher Pitts is a tech-savvy servant leader with a track record of developing high-performing teams,
+          driving operational excellence, and delivering exceptional client service. Passionate about innovation and
+          people development, Chris combines expertise in process improvement, sustainability, and change management to
+          create impactful solutions and foster lasting success.</p>
+
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32">Expertise</li>
+          <li class="w3-padding-16">Business Integrations and Process Improvement</li>
+          <li class="w3-padding-16">Operations and Process Improvement</li>
+          <li class="w3-padding-16">Employee Relationship Management and Leadership</li>
+          <li class="w3-padding-16">Customer Discovery/Market research</li>
+        </ul>
+      </div>
+
     </div>
+
+
+    <!--seperator-->
+    <div class="w3-display-container w3-padding-64 w3-animate-opacity">
+      <div style="position: relative; width: 10000px; height: auto; object-fit: cover;">
+        <img src="/images/beach-landscape-aesthetic-Favim.com-7043039.jpg" class="w3-image w3-greyscale-min" ;>
+      </div>
+    </div>
+
+
+    <!--Our Approach-->
+    <!--Partner Criteria-->
+    <div class="w3-container w3-row-padding w3-center" id="partner">
+      <div class="w3-center w3-padding-64">
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Partner Criteria</span>
+      </div>
+      <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+        <h3>Niche Manufacturing Companies</h3>
+        <p>[Add some description/something]</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+        <h3>Unique or Exclusive Manufacturing Rights</h3>
+        <p>[Add some description/something]</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+        <h3>Annual Revenues of ##M-##M</h3>
+        <p>[Add some description/something]</p>
+      </div>
+
+      <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+        <h3>Strong Customer and Employee Relationships</h3>
+        <p>[Add some description/something]</p>
+      </div>
+    </div>
+
   </div>
 
-<!--Meet the Founder-->
-  <div class="w3-container w3-row-padding w3-center" id="founder">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Meet the Founder</span>
-    </div>
 
-  <div class="w3-half w3-container w3-margin-left">
-      <img src="/images/Chris Pitts.png" alt="Christopher Pitts" style="width:50%" class="w3-circle">
-      <h3>Christopher Pitts</h3>
-      <p>Christopher Pitts is a tech-savvy servant leader with a track record of developing high-performing teams, driving operational excellence, and delivering exceptional client service. Passionate about innovation and people development, Chris combines expertise in process improvement, sustainability, and change management to create impactful solutions and foster lasting success.</p>
-
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Expertise</li>
-        <li class="w3-padding-16">Business Integrations and Process Improvement</li>
-        <li class="w3-padding-16">Operations and Process Improvement</li>
-        <li class="w3-padding-16">Employee Relationship Management and Leadership</li>
-        <li class="w3-padding-16">Customer Discovery/Market research</li>
-      </ul>
-  </div>
-
-</div>
-
-
-<!--seperator-->
-<div  class="w3-display-container w3-padding-64 w3-animate-opacity">
-  <div style="position: relative; width: 10000px; height: auto; object-fit: cover;">
-    <img src="/images/beach-landscape-aesthetic-Favim.com-7043039.jpg" class="w3-image w3-greyscale-min";>
-  </div>
-</div>
-
-
-<!--Our Approach-->
-<!--Partner Criteria-->
-  <div class="w3-container w3-row-padding w3-center" id="approach">
-    <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Partner Criteria</span>
-    </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>Niche Manufacturing Companies</h3>
-      <p>[Add some description/something]</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>Unique or Exclusive Manufacturing Rights</h3>
-      <p>[Add some description/something]</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>Annual Revenues of ##M-##M</h3>
-      <p>[Add some description/something]</p>
-    </div>
-
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-      <h3>Strong Customer and Employee Relationships</h3>
-      <p>[Add some description/something]</p>
-    </div>
-  </div>
-
-  </div>
-
-  
 
   <!--Acquisition Approach-->
   <div class="w3-container w3-row-padding w3-center">
     <div class="w3-center w3-padding-64">
-        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Three Pillars of Maracas' Approach</span>
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Three Pillars of Maracas' Approach</span>
     </div>
   </div>
 
@@ -186,46 +208,49 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     </div>
   </div>
 
-    <div class="w3-margin-bottom w3-center">
-      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Investors</li>
-        <li class="w3-padding-16">Strong Returns</li>
-        <li class="w3-padding-16"> Impactful Investments</li>
-        <li class="w3-padding-16">[Something Else]</li>
-    </div>
-  </div> 
+  <div class="w3-margin-bottom w3-center">
+    <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+      <li class="w3-black w3-xlarge w3-padding-32">Investors</li>
+      <li class="w3-padding-16">Strong Returns</li>
+      <li class="w3-padding-16"> Impactful Investments</li>
+      <li class="w3-padding-16">[Something Else]</li>
+  </div>
+  </div>
 
-<!--seperator-->
-  <div  class="w3-display-container w3-padding-64 w3-animate-opacity">
+  <!--seperator-->
+  <div class="w3-display-container w3-padding-64 w3-animate-opacity">
     <div style="position: relative; width: 10000px; height: auto; object-fit: cover;">
-      <img src="/images/cool beach.jpg" class="w3-image w3-greyscale-min";>
+      <img src="/images/cool beach.jpg" class="w3-image w3-greyscale-min" ;>
     </div>
 
   </div>
 
-<!--Why Maracas-->
-  <div class="w3-container w3-row-padding w3-center" id="whyUs">
+  <!--Why Maracas-->
+  <div class="w3-container w3-row-padding w3-center" id="why">
     <div class="w3-center w3-padding-34">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Why Maracas</span>
     </div>
     <div class="w3-content w3-center w3-padding-64">
-      <p style="font-size: medium;"><b>Maracas Capital</b> is a trusted partner and specializes in acquiring <b>niche manufacturing companies</b>, delivering tailored solutions for smooth transitions, long-term stewardship, and impactful investments.</p>
-      <p>Unlike large, faceless firms, we focus on a more personal, <b>relationship-driven approach</b> to ensure seamless continuity, trust, and mutual success.</p>
+      <p style="font-size: medium;"><b>Maracas Capital</b> is a trusted partner and specializes in acquiring <b>niche
+          manufacturing companies</b>, delivering tailored solutions for smooth transitions, long-term stewardship, and
+        impactful investments.</p>
+      <p>Unlike large, faceless firms, we focus on a more personal, <b>relationship-driven approach</b> to ensure
+        seamless continuity, trust, and mutual success.</p>
     </div>
   </div>
 
-<!--separator-->
+  <!--separator-->
   <div id="seperator" class="w3-display-container w3-padding-64 w3-animate-opacity">
     <div style="position: relative; width: 100%; height: auto; object-fit: cover;">
-     <img src="/images/Palm Trees.jpg" class="w3-image w3-greyscale-min";>
+      <img src="/images/Palm Trees.jpg" class="w3-image w3-greyscale-min" ;>
     </div>
   </div>
 
-<!-- Contact -->
-  <div class="w3-center w3-padding-64" id="contactUs">
+  <!-- Contact -->
+  <div class="w3-center w3-padding-64" id="contact">
     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
   </div>
-  
+
 
   <!--wgetreal-side script to process form-->
   <form class="w3-container" action="/action_page.php" target="_blank">
@@ -247,22 +272,24 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
     </div>
     <button type="submit" class="w3-button w3-block w3-black">Send</button>
   </form>
-</div>
-
-<!--Footer-->
-<!-- Footer -->
-
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Footer</h4>
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+
+  <!--Footer-->
+  <!-- Footer -->
+
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <h4>Footer</h4>
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
 </html>
