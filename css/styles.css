@@ -48,7 +48,7 @@ a.anchor {
     justify-content: space-between;
 }
 
-.gird-box{
+.grid-box{
     flex: 1;
     height: 400px;
     min-width: 250px;
