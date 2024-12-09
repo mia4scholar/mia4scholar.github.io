@@ -47,13 +47,3 @@ a.anchor {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
-.grid-box{
-    flex: 1;
-    height: 400px;
-    min-width: 250px;
-    padding: 16px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
