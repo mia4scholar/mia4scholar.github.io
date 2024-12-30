@@ -45,6 +45,7 @@
     </style>
 </head>
 
+<!--Navbar-->
 <body>
     <div class="w3-top">
         <div class="w3-bar w3-light-grey" style="display: flex; justify-content: space-between; align-items: center;">
@@ -95,6 +96,28 @@
         <span class="w3-xlarge w3-bottombar w3-padding-16 w3-border-blue-grey">Contact Us</span>
     </div>
     </div>
+
+    <!--wgetreal-side script to process form-->
+  <form class="w3-container" action="/action_page.php" target="_blank">
+    <div class="w3-section">
+      <label>Name</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+    </div>
+    <div class="w3-section">
+      <label>Email</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+    </div>
+    <div class="w3-section">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Subject" required>
+    </div>
+    <div class="w3-section">
+      <label>Message</label>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+    </div>
+    <button type="submit" class="w3-button w3-block w3-black">Send</button>
+  </form>
+  </div>
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
