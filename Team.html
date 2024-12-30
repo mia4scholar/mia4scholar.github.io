@@ -1,0 +1,141 @@
+<!--
+1. nav bar
+2. image header
+3. content
+4. footer with prev/next page options
+<!DOCTYPE html>
+<html lang="en">
+-->
+
+<head>
+  <title>Maracas Capital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  html, body, h1, h2, h3, h4 { font-family: "Lato", sans-serif}
+  .mySlides {display: none}
+  .w3-tag, .fa {cursor: pointer}
+  .w3-tag {height: 15px; width: 15px; padding: 0; margin-top: 6px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey" style="display: flex; justify-content: space-between; align-items: center;">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2"><i
+        class="fa fa-bars"></i></a>
+    <a href="/" class="w3-bar-item w3-button">
+      <img src="./images/mcc.png" alt="Home" style="width: 100px; height: auto;">
+    </a>
+
+    <div style="margin-left: auto; display: flex; gap: 16px; align-items: center;">
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="WhoWeAre.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Who We Are</a>
+        </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="Team.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Team</a>
+        </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="News.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">News</a>
+        </div>
+        <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
+          <a href="ContactUs.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white w3-right">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Navbar on small screens/phones -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+      <a href="WhoWeAre.html" class="w3-bar-item w3-button">Who We Are</a>
+      <a href="Team.html" class="w3-bar-item w3-button">Team</a>
+      <a href="News.html" class="w3-bar-item w3-button">News</a>
+      <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
+  </div>
+
+  <!--image header-->
+  <div class="w3-display-container w3-animate-opacity header">
+    <video autoplay muted loop
+      style="position: relative; width: 100%; height: auto; object-fit: cover; filter: grayscale(25%);">
+      <source src="./images/180607_A_115.mp4" type="video/mp4">
+      Your browser doesn't support the video tag.
+    </video>
+
+    <div class="w3-display-left w3-animate-opacity">
+      <a href="/" style="position: relative; left: 20px; z-index: 10;">
+        <img src="./images/BigLogo.png" alt="Logo" style="width: 500px; height: auto;">
+      </a>
+    </div>
+
+    <div class=" w3-display-bottomleft">
+      <div style="position: relative; bottom: 20px; left: 20px;">
+        <h1 style="color:antiquewhite; font-size: x-large; left: 30px;">"Preserving Legacies, Empowering Futures:</h1>
+        <h2 style="color:antiquewhite; font-size: x-large; left: 50px;">Trust Maracas Capital to Be Your Partner in
+          Transition."' </h2>
+        <p style="color:rgb(231, 209, 179); font-size: large;">Start Your Transition Journey Today</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-content" style="max-width:1300px;margin-top:60px;margin-bottom:60px">
+    <a class="anchor" id="aboutus"></a>
+  <!--Meet the Founder-->
+  <div class="w3-container w3-row founder">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-padding-16 w3-border-blue-grey">Meet the Founder</span>
+    </div>
+
+    <div class="w3-row w3-half w3-center w3-container">
+      <img src="./images/pitts.png" alt="Christopher Pitts" style="width:75%" class="w3-circle">
+      <h3>Christopher Pitts</h3>
+      <p style="font-size: large;">Christopher Pitts is a tech-savvy servant leader with a track record of developing high-performing teams,
+        driving operational excellence, and delivering exceptional client service. Passionate about innovation and
+        people development, Chris combines expertise in process improvement, sustainability, and change management to
+        create impactful solutions and foster lasting success.</p>
+
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3- w3-xlarge w3-padding-32">Expertise</li>
+        <li class="w3-padding-16">Business Integrations and Process Improvement</li>
+        <li class="w3-padding-16">Operations and Process Improvement</li>
+        <li class="w3-padding-16">Employee Relationship Management and Leadership</li>
+        <li class="w3-padding-16">Customer Discovery/Market research</li>
+      </ul>
+    </div>
+  
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-padding-16 w3-border-blue-grey">NEWS</span>
+    </div>
+
+    <div class="w3-row w3-half w3-center w3-display-container w3-padding-64">
+      <!--Slide 1-->
+      <div class="w3-display-container mySlides">
+        <a href="https://www.clearadmit.com/2023/12/real-humans-of-the-washu-olin-mba-class-of-2025/2/" target="_blank">
+          <img src="./images/MBA.png" style="width:100%" class="slideshow-image">
+        </a>
+        <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
+          Real Humans of Washington University...
+        </div>
+      </div>
+    <!--slide 2-->
+      <div class="w3-display-container mySlides">
+        <a href="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/" target="_blank" class="w3-padding-16">
+          <img src="./images/PoetsArticle.png" style="width:100%" class="slideshow-image">
+          
+        </a>
+        <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
+          Poets & Quants: Class of 2025
+        </div>
+      </div>
+    <!--slide3-->
+      <div class="w3-display-container mySlides">
+       <img src="./images/beach_3.jpg" style="width:100%" class="slideshow-image">
+       <div class="w3-container w3-center w3-light-grey w3-padding-small">
+          <p class="w3-text-dark-grey">Poets & Quants Article</p>
+        </div>
+      </div>
