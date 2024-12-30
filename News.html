@@ -61,3 +61,101 @@
       <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
     </div>
   </div>
+
+  <!--image header-->
+  <!--seperator-->
+  <div class="w3-display-container w3-center w3-padding-64 w3-animate-opacity seperator">
+    <img src="./images/beach_2.jpg" class="beach-image" style="width: 100%; min-height: 100px; max-height: 400px; object-fit: cover;">
+  </div>
+
+
+  <!--content-->
+  <div class="w3-content" style="max-width:1300px;margin-top:60px;margin-bottom:60px">
+    <a class="anchor" id="aboutus"></a>
+
+    <div class="w3-row w3-half w3-center w3-display-container w3-padding-64">
+        <!--Slide 1-->
+        <div class="w3-display-container mySlides">
+          <a href="https://www.clearadmit.com/2023/12/real-humans-of-the-washu-olin-mba-class-of-2025/2/" target="_blank">
+            <img src="./images/MBA.png" style="width:100%" class="slideshow-image">
+          </a>
+          <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
+            Real Humans of Washington University...
+          </div>
+        </div>
+      <!--slide 2-->
+        <div class="w3-display-container mySlides">
+          <a href="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/" target="_blank" class="w3-padding-16">
+            <img src="./images/PoetsArticle.png" style="width:100%" class="slideshow-image">
+            
+          </a>
+          <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
+            Poets & Quants: Class of 2025
+          </div>
+        </div>
+      <!--slide3-->
+        <div class="w3-display-container mySlides">
+         <img src="./images/beach_3.jpg" style="width:100%" class="slideshow-image">
+         <div class="w3-container w3-center w3-light-grey w3-padding-small">
+            <p class="w3-text-dark-grey">Poets & Quants Article</p>
+          </div>
+        </div>
+
+    <!-- Slideshow next/previous buttons -->
+        <div class="w3-container w3-center w3-dark-grey w3-padding-small w3-xlarge">
+          <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>
+           <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
+    
+            <div class="w3-center">
+             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+             <span class="w3-tag demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+           </div>
+          </div>
+       </div>
+     </div>
+    </div>
+
+    <script>
+        // Slideshow
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demodots");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length} ;
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+          }
+          x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " w3-white";
+        }
+        </script>
+
+        <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://linkedin.com" title="LinkedIn" target="_blank">
+      <i class="fa fa-linkedin w3-hover-opacity icon-padding"></i></a>
+      <a href="mailto:email@example.com" title="Email" target="_blank">
+      <i class="fa fa-envelope w3-hover-opacity icon-padding"></i></a>
+    </div>
+    <p>© Maracas Capital 2024</p>
+  </footer>
+
+</html>
