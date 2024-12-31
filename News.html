@@ -86,96 +86,32 @@
     </div>
 
     <!--image header-->
-    <!--seperator-->
     <div class="w3-display-container w3-center w3-padding-64 w3-animate-opacity seperator">
-        <img src="./images/beach_2.jpg" class="beach-image"
-            style="width: 100%; min-height: 100px; max-height: 400px; object-fit: cover;">
-    </div>
-
-
-    <!--content-->
-    <div class="w3-content" style="max-width:1300px;margin-top:60px;margin-bottom:60px">
-        <!--<a class="anchor" id="aboutus"></a>-->
-
-        <div class="w3-row w3-half w3-center w3-display-container w3-padding-64">
-            <!--Slide 1-->
-            <div class="w3-display-container mySlides">
-                <a href="https://www.clearadmit.com/2023/12/real-humans-of-the-washu-olin-mba-class-of-2025/2/"
-                    target="_blank">
-                    <img src="./images/MBA.png" style="width:100%" class="slideshow-image">
-                </a>
-                <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
-                    Real Humans of Washington University...
-                </div>
-            </div>
-            <!--slide 2-->
-            <div class="w3-display-container mySlides">
-                <a href="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/"
-                    target="_blank" class="w3-padding-16">
-                    <img src="./images/PoetsArticle.png" style="width:100%" class="slideshow-image">
-
-                </a>
-                <div class="w3-display-bottomright w3-container w3-padding-16 w3-dark-grey">
-                    Poets & Quants: Class of 2025
-                </div>
-            </div>
-            <!--slide3-->
-            <div class="w3-display-container mySlides">
-                <img src="./images/beach_3.jpg" style="width:100%" class="slideshow-image">
-                <div class="w3-container w3-center w3-light-grey w3-padding-small">
-                    <p class="w3-text-dark-grey">Poets & Quants Article</p>
-                </div>
-            </div>
-
-            <!-- Slideshow next/previous buttons -->
-            <div class="w3-container w3-center w3-dark-grey w3-padding-small w3-xlarge">
-                <div class="w3-left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i>
-                </div>
-                <div class="w3-right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i>
-                </div>
-
-                <div class="w3-center">
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
-                        onclick="currentDiv(1)"></span>
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
-                        onclick="currentDiv(2)"></span>
-                    <span class="w3-tag demodots w3-border w3-transparent w3-hover-white"
-                        onclick="currentDiv(3)"></span>
-                </div>
+        <div class="blurred-image" style="position: relative; width: 100%; min-height: 100px; max-height: 400px;">
+            <img src="./images/palm_trees.jpg" class="beach-image" 
+                 style="width: 100%; height: 100%; object-fit: cover; filter: blur(8px);">
+            <div class="title-overlay" 
+                 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); font-size: 3rem; font-weight: bold;">
+                Stay In The Know
             </div>
         </div>
     </div>
+
+    <!--content-->
+    <div class="w3-content news-container" style="max-width:1300px; margin-top:60px; margin-bottom:60px;">
+        <div class="news-item">
+            <a href ="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/" class="news-title">Meet the MBA Class of 2025: Christopher Pitts, Washington University (Olin)</a>
+            <p class="news-date">June 21, 2024</p>
+            <p class="news-description">Aside from your immersion and classmates, what was the key part of Washington Olin’s MBA programming that led you to choose this business school and why was it so important to you? The most important aspect of Olin’s programming was the opportunity to build a network of high performers. I keep track of my personal and professional development by taking assessments of the people around me. Olin has not disappointed, whether it be students, alumni or professors.</p>
+        </div>
+        <div class="news-item">
+            <a href ="https://olin.wustl.edu/about/news-and-media/news/2024/01/new-club-promotes-entrepreneurship-through-acquisition.php" class="news-title">ETA Club Promotes Entrepreneurship Through Acquisition</a>
+            <p class="news-date">January 22, 2024</p>
+            <p class="news-description">For many business students, entrepreneurship dreams don’t necessarily include a startup. Instead, they’re driven by the goal of buying existing businesses and helping them grow.
+                That path, called entrepreneurship through acquisition (ETA), is increasingly popular among MBA students, and a group of aspiring owners at Olin is banding together to promote it.</p>
+        </div>
     </div>
 
-    <script>
-        // Slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demodots");
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length };
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" w3-white", "");
-            }
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " w3-white";
-        }
-    </script>
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
