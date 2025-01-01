@@ -48,3 +48,71 @@ a.anchor {
     justify-content: space-between;
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-page background */
+body {
+    background: url('./images/MaracasBeach.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px); /* Apply blur to the entire background */
+    -webkit-filter: blur(8px);
+}
+
+/* Foreground container to unblur content */
+.foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(0px); /* Ensure text/content is not blurred */
+}
+
+/* Contact form styling */
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 32px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: gray;
+}
