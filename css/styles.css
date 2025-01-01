@@ -59,7 +59,7 @@ body, html {
 body {
     background: url('./images/MaracasBeach.jpg') no-repeat center center fixed;
     background-size: cover;
-    filter: blur(8px); /* Apply blur to the entire background */
+    /*filter: blur(8px); /* Apply blur to the entire background */
     -webkit-filter: blur(8px);
 }
 
