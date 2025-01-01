@@ -60,7 +60,7 @@ body {
     background: url('./images/MaracasBeach.jpg') no-repeat center center fixed;
     background-size: cover;
     /*filter: blur(8px); /* Apply blur to the entire background */
-    -webkit-filter: blur(8px);
+    /*-webkit-filter: blur(8px);
 }
 
 /* Foreground container to unblur content */
@@ -76,7 +76,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(0px); /* Ensure text/content is not blurred */
+   /* backdrop-filter: blur(0px); /* Ensure text/content is not blurred */
 }
 
 /* Contact form styling */
