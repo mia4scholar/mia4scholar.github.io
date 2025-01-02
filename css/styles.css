@@ -26,11 +26,11 @@ a.anchor {
     max-width: 100vw;
 }*/
 
-.slideshow-image {
+/*.slideshow-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
-}
+}*/
 
 /*.seperator {
     position: relative;
@@ -42,11 +42,11 @@ a.anchor {
     overflow: hidden;
 }*/
 
-.grid-container{
+/*.grid-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+}*/
 
 body, html {
     margin: 0;
@@ -118,4 +118,10 @@ body {
 
 .contact-form button:hover {
     background-color: gray;
+}
+
+.img{
+    width: 45%;
+    height: auto;
+  
 }
