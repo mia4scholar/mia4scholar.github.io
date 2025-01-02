@@ -115,32 +115,4 @@ body {
     }
   }
 
-  .next-page-button {
-    position: fixed; /* Keeps the button in a fixed position */
-    bottom: 20px; /* Distance from the bottom of the screen */
-    right: 20px; /* Distance from the right of the screen */
-    z-index: 1000; /* Ensures it is above other content */
-  }
-
-  .button-link {
-    display: inline-block;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    text-align: center;
-    text-decoration: none; /* Removes underline */
-    padding: 12px 24px; /* Adds padding for the button */
-    font-size: 16px; /* Adjust font size */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  }
-
-  .button-link:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-  }
-
-  .button-link:active {
-    background-color: #3e8e41; /* Even darker green when clicked */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Minimal shadow when active */
-  }
+  
