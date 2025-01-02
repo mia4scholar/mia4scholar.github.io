@@ -1,3 +1,4 @@
+
 * {
     max-width: 100%;
     overflow-x: hidden;
@@ -22,32 +23,6 @@ a.anchor {
     padding: 5px;
 }
 
-/*.beach-image {
-    max-width: 100vw;
-}*/
-
-/*.slideshow-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}*/
-
-/*.seperator {
-    position: relative;
-    width: 150%;
-    height: 400px;
-    object-fit: fill;
-    object-position: center;
-    display: block;
-    overflow: hidden;
-}*/
-
-/*.grid-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}*/
-
 body, html {
     margin: 0;
     padding: 0;
@@ -60,8 +35,6 @@ body {
     background: url('./images/MaracasBeach.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
-    /*filter: blur(8px); /* Apply blur to the entire background */
-    /*-webkit-filter: blur(8px);
 }
 
 /* Foreground container to unblur content */
@@ -77,7 +50,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   /* backdrop-filter: blur(0px); /* Ensure text/content is not blurred */
 }
 
 /* Contact form styling */
@@ -123,5 +95,52 @@ body {
 .img{
     width: 45%;
     height: auto;
-  
 }
+
+.responsive-logo {
+    width: 25%; /* Adjust this percentage as needed */
+    max-width: 500px; /* Maximum width for larger screens */
+    height: auto; /* Maintains aspect ratio */
+  }
+
+  @media (max-width: 768px) {
+    .responsive-logo {
+      width: 40%; /* Slightly larger on smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .responsive-logo {
+      width: 60%; /* Larger scaling for very small screens */
+    }
+  }
+
+  .next-page-button {
+    position: fixed; /* Keeps the button in a fixed position */
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px; /* Distance from the right of the screen */
+    z-index: 1000; /* Ensures it is above other content */
+  }
+
+  .button-link {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    padding: 12px 24px; /* Adds padding for the button */
+    font-size: 16px; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+
+  .button-link:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+
+  .button-link:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Minimal shadow when active */
+  }
