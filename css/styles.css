@@ -98,7 +98,7 @@ body {
 }
 
 .responsive-logo {
-    width: 25%; /* Adjust this percentage as needed */
+    width: 75%; /* Adjust this percentage as needed */
     max-width: 500px; /* Maximum width for larger screens */
     height: auto; /* Maintains aspect ratio */
   }
@@ -112,6 +112,27 @@ body {
   @media (max-width: 480px) {
     .responsive-logo {
       width: 60%; /* Larger scaling for very small screens */
+    }
+  }
+
+  .responsive-text h1, h2{
+    color: antiquewhite;
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+  }
+
+  .responsive-text{
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+  }
+
+  @media (max-width: 600px){
+    .responsive-text{
+        bottom:10px;
+        left: 10px;
+    }
+    .responsive-text h1, .responsive-text h2 {
+        font-size: clamp(1rem, 4vw, 2rem); /* Adjust font size for smaller screens */
     }
   }
 
