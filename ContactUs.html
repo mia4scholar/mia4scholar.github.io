@@ -94,11 +94,11 @@
 
     <!-- Overlay Content -->
     <div class="w3-content w3-padding-large w3-center w3-display-middle w3-margin-top w3-text-white" style="max-width: 2000px;">
-        <h2><b>Interested in connecting?</b></h2>
+        <h2 style="color: white;"><b>Interested in connecting?</b></h2>
         <p>Fill out the required sections below.</p>
     
         <!-- Form -->
-        <form class="w3-container w3-padding-large w3-margin" style="width:100%;" action="send_email.php" methoD="POST">
+        <form class="w3-container w3-padding-xlarge w3-margin" style="width:100%;" action="https://formspree.io/f/xbllpndp" methoD="POST">
             <div class="w3-row-padding" style="margin-bottom: 16px;">
                 <div class=" w3-half w3-block">
                     <label style="color: white; text-align: left;">First Name</label>
@@ -111,21 +111,21 @@
             </div>
             <div class="w3-row-padding" style="margin-bottom: 16px;">
                 <div class="w3-col w3-block">
-                    <label style="color: white; text-align: left; ">Email</label>
+                    <label style="color: white; text-align: left;">Email</label>
                     <input class="w3-input w3-border" type="email" required name="Email" >
                 </div>
             </div>
             <div class="w3-row-padding" style="margin-bottom: 16px;">
-                <div class="w3-col w3-block">
+                <div class="w3-col w3-block"> 
                     <label style="color: white; text-align: left;">Message</label>
-                    <textarea class="w3-input w3-border" required name="Message" rows="5"></textarea>
+                    <input class="message-box w3-input w3-border" type="text" required name="Message">
                 </div>
             </div>
             <!--Terms and Conditions checkbox-->
             <div class="w3-row-padding" style="margin-bottom: 16px;">
                 <div class="w3-col w3-block">
                     <label style="color: white; text-align: left;">
-                        <input type="checkbox" required name="Terms"> Agree to Terms and Conditions
+                        <input type="checkbox" required name="Terms"> Verify you're not a robot.
                     </label>
                 </div>
             </div>
