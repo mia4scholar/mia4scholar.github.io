@@ -137,23 +137,20 @@ body {
     }
 }
 
-
-/*  .section-header {
-    font-size: 1.5em; 
-    font-weight: bold;
-    margin-bottom: 10px; 
-    text-align: left; 
+@media (max-width: 768px) {
+    .we3-content{
+        margin: 0 24px;
+        padding: 0 24px;
+    }
 }
 
-.section-body {
-    font-size: 1em; 
-    margin-bottom: 20px; 
-    text-align: justify; 
+@media (max-width: 480px){
+    .w3-content{
+        margin: 0 16px;
+        padding: 0 16px;
+    }
+}
+.w3-content {
 
-.step-header {
-    font-size: 1.3em; 
-    font-weight: bold;
-    margin-bottom: 5px;
-}*/
-
+}
   
