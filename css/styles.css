@@ -106,13 +106,13 @@ body {
 
   @media (max-width: 768px) {
     .responsive-logo {
-      width: 40%; /* Slightly larger on smaller screens */
+      max-width: 250px; /* Slightly larger on smaller screens */
     }
   }
 
   @media (max-width: 480px) {
     .responsive-logo {
-      width: 60%; /* Larger scaling for very small screens */
+      max-width: 150px; /* Larger scaling for very small screens */
     }
   }
 
