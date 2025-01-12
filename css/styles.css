@@ -174,5 +174,20 @@ body {
 @media (max-width: 480px){
     .title-overlay{
         font-size: 1rem;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 }
+
+.mobile-spacing {
+    display: none;
+  }
+  
+  /* Show the spacing div for mobile screens only */
+  @media (max-width: 768px) {
+    .mobile-spacing {
+      display: block;
+      height: 80px; /* Adjust height as needed */
+    }
+  }
