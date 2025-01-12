@@ -78,6 +78,19 @@ body {
     border-radius: 5px;
 }
 
+@media (max-width:768px){
+    .contact-form textarea{
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px){
+    .contact-form textarea{
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
 .contact-form button {
     width: 100%;
     padding: 12px;
@@ -153,12 +166,13 @@ body {
 
 @media (max-width: 768px){
     .title-overlay{
-        font-size: 2.5rem;
+        font-size: 2rem;
+        left: 150px;
     }
 }
 
 @media (max-width: 480px){
     .title-overlay{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
