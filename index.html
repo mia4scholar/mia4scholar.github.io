@@ -1,7 +1,8 @@
-<!--Second iteration
-slideshow
-news links
-etc-->
+<!--
+Index.html
+Maracas Capital Website Homepage
+Video Header and Company Name Description
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +18,21 @@ etc-->
   html, body, h1, h2, h3, h4 { font-family: "Lato", sans-serif}
   .mySlides {display: none}
   .w3-tag, .fa {cursor: pointer}
-  .w3-tag {height: 15px; width: 15px; padding: 0; margin-top: 6px}
+  .w3-tag {height: 15px; width: 15px; padding: 0; margin-top: 6px;}
+
+  @media (max-width: 768px){
+    .w3-bar {
+      display:block;
+      text-align: center;
+    }
+    .w3-bar img{
+      width: 75px;
+    }
+    .w3-bar .w3-button{
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -25,11 +40,14 @@ etc-->
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-light-grey" style="display: flex; justify-content: space-between; align-items: center;">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2"><i
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2" onclick="toggleMenu()"><i
         class="fa fa-bars"></i></a>
+        
+        <!--Logo-->
     <a href="/" class="w3-bar-item w3-button w3-hover-white">
       <img src="./images/smallLogo.png" alt="Home" style="width: 100px; height: auto;">
     </a>
+
 
     <div style="margin-left: auto; display: flex; gap: 16px; align-items: center;">
       <div class="w3-bar-item w3-button w3-hide-small w3-hover-white">
@@ -53,12 +71,21 @@ etc-->
 
   <!-- Navbar on small screens/phones -->
   <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+    <a href="/" class="w3-bar-item w3-button">Home</a>
     <a href="WhoWeAre.html" class="w3-bar-item w3-button">Who We Are</a>
     <a href="Team.html" class="w3-bar-item w3-button">Team</a>
     <a href="News.html" class="w3-bar-item w3-button">News</a>
     <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
   </div>
 </div>
+
+<script>
+function toggleMenu(){
+  const navDemo = document.getElementById("navDemo");
+  navDemo.classList.toggle("w3-show");
+}
+</script>
+
 
   <!--image header-->
   <div class="w3-display-container w3-animate-opacity header">
@@ -73,29 +100,17 @@ etc-->
         <img src="./images/BigLogo.png" alt="Logo" class = "responsive-logo">
       </a>
     </div>
-
-    <!--<div class=" w3-display-bottomleft w3-container">
-      <div class="responsive-text"  style="position: relative; bottom: 20px; left: 20px;">
-        <h1 style="color:antiquewhite; font-size: x-large; left: 30px;">We are looking to acquire, operate,</h1>
-        <h2 style="color:antiquewhite; font-size: x-large; left: 50px;">and preserve the legacy of one great business.</h2>
-      </div>
-    </div>-->
   </div>
 
   <!--content-->
   <div class="w3-content" style="max-width:1200px;margin-top:60px;margin-bottom:60px">
     <div class="w3-content w3-center w3-padding-12">
-        <p class="w3-large"><b>Maracas Capital</b> is named after the beach where the founder, <i>Chris,</i> got
-            engaged. <b>Maracas Capital</b> strives to embody the <i>commitment</i> and <i>faithfulness</i> Chris feels
-            toward his family and values. Just as the beach symbolizes a place of <i>stability</i> and <i>enduring
-                beauty</i>, <b>Maracas Capital</b> is dedicated to offering companies a strong foundation on which they
-            can thrive and grow, with a commitment to <i>long-term partnerships</i> and <i>mutual success.</i></p>
+        <p class="w3-large">At Maracas Capital, we’re compromised of a team of entrepreneurs, investors, and small business CEOs just like you. We’ve been in the trenches, built businesses, lead teams, and understand the impact of what you’ve created. We know what it takes to grow a company for the long term, and we’re here to help you make the next chapter of your business's legacy just as powerful.</p>
     </div>
 </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
         <a href="https://www.linkedin.com/in/christopherpitts12/" title="LinkedIn" target="_blank">
             <i class="fa fa-linkedin w3-hover-opacity icon-padding"></i></a>

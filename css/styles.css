@@ -135,6 +135,25 @@ body {
     .responsive-text h1, .responsive-text h2 {
         font-size: clamp(1rem, 4vw, 2rem); /* Adjust font size for smaller screens */
     }
-  }
+}
+
+
+/*  .section-header {
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: left; 
+}
+
+.section-body {
+    font-size: 1em; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+
+.step-header {
+    font-size: 1.3em; 
+    font-weight: bold;
+    margin-bottom: 5px;
+}*/
 
   
