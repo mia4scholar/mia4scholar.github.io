@@ -179,15 +179,18 @@ body {
         transform: translate(-50%, 0);
     }
 }
-
-.mobile-spacing {
-    display: none;
-  }
   
-  /* Show the spacing div for mobile screens only */
-  @media (max-width: 768px) {
+/* Show the spacing div for mobile screens only */
+@media (max-width: 768px) {
     .mobile-spacing {
       display: block;
-      height: 80px; /* Adjust height as needed */
+      height: 60px; /* Adjust height as needed */
     }
-  }
+}
+
+@media (max-width: 480px) {
+    .mobile-spacing{
+        display: block;
+        height: 60px;;
+    }
+}
