@@ -185,13 +185,19 @@ body {
 @media (max-width: 768px) {
     .mobile-spacing {
       display: block;
-      height: 80px; /* Adjust height as needed */
+      height: 60px; /* Adjust height as needed */
     }
 }
 
 @media (max-width: 480px) {
     .mobile-spacing{
         display: block;
-        height: 80px;;
+        height: 60px;;
+    }
+}
+
+@media (max-width: 768px) {
+    .w3-row {
+        margin-bottom: 40px; /* Reduce the space between rows */
     }
 }
