@@ -186,14 +186,12 @@ body {
 @media (max-width: 768px) {
     .mobile-spacing {
       height: 80px; /* Adjust height as needed */
-      width: auto;
     }
 }
 
 @media (max-width: 480px) {
     .mobile-spacing{
         height: 80px;
-        width: auto;
     }
 }
 
