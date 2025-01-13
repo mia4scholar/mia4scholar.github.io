@@ -166,7 +166,7 @@ body {
 
 @media (max-width: 768px){
     .title-overlay{
-        font-size: 2rem;
+        font-size: medium;
         text-align: center;
         transform: translate(-50%, 0);
 text-align: center;
@@ -175,7 +175,7 @@ text-align: center;
 
 @media (max-width: 480px){
     .title-overlay{
-        font-size: 1rem;
+        font-size: small;
         text-align: center;
         transform: translate(-50%, 0);
         text-align: center;
