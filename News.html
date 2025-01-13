@@ -51,7 +51,8 @@
     <!-- Navbar -->
     <div class="w3-top">
         <div class="w3-bar w3-light-grey" style="display: flex; justify-content: space-between; align-items: center;">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2" onclick="toggleMenu()">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-left w3-hover-white w3-theme-d2"
+                onclick="toggleMenu()">
                 <i class="fa fa-bars"></i></a>
             <a href="/" class="w3-bar-item w3-button w3-hover-white">
                 <img src="./images/smallLogo.png" alt="Home" style="width: 100px; height: auto;">
@@ -81,60 +82,71 @@
 
     <div class="mobile-spacing"></div>
 
-  <!-- Navbar on small screens/phones -->
-  <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
-    <a href="/" class="w3-bar-item w3-button">Home</a>
-    <a href="WhoWeAre.html" class="w3-bar-item w3-button">Who We Are</a>
-    <a href="Team.html" class="w3-bar-item w3-button">Team</a>
-    <a href="News.html" class="w3-bar-item w3-button">News</a>
-    <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
-  </div>
-</div>
+    <!-- Navbar on small screens/phones -->
+    <div id="navDemo" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+        <a href="/" class="w3-bar-item w3-button">Home</a>
+        <a href="WhoWeAre.html" class="w3-bar-item w3-button">Who We Are</a>
+        <a href="Team.html" class="w3-bar-item w3-button">Team</a>
+        <a href="News.html" class="w3-bar-item w3-button">News</a>
+        <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+    </div>
 
-<script>
-function toggleMenu(){
-  const navDemo = document.getElementById("navDemo");
-  navDemo.classList.toggle("w3-show");
-}
-</script>
+    <script>
+        function toggleMenu() {
+            const navDemo = document.getElementById("navDemo");
+            navDemo.classList.toggle("w3-show");
+        }
+    </script>
 
     <!--image header-->
     <div class="w3-display-container w3-center w3-animate-opacity seperator">
-        <div class="blurred-image" style="position: relative; width: 100%; min-height: 100px; max-height: 320px; overflow: hidden;">
-            <img src="./images/palm_trees.jpg" class="beach-image" 
-                 style="width: 100%; height: auto; object-fit: cover; filter: blur(8px); background: rgba(0,0, 0, 0.8);">
-            <div class="title-overlay" 
-                 style="position: absolute; bottom: 20px; left: 250px; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); font-size: 3rem; font-weight: bold;">
+        <div class="blurred-image"
+            style="position: relative; width: 100%; min-height: 100px; max-height: 320px; overflow: hidden;">
+            <img src="./images/palm_trees.jpg" class="beach-image"
+                style="width: 100%; height: auto; object-fit: cover; filter: blur(8px); background: rgba(0,0, 0, 0.8);">
+            <div class="title-overlay"
+                style="position: absolute; bottom: 20px; left: 250px; transform: translate(-50%, -50%); color: white; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); font-size: 3rem; font-weight: bold;">
                 Stay In The Know
             </div>
         </div>
-    </div>
 
-    <!--content-->
-    <div class="w3-content news-container" style="max-width:1200px; margin-top:60px; margin-bottom:60px;">
-        <div class="news-item">
-            <a href ="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/" class="news-title" style="font-size:x-large; font-weight: bold;">Meet the MBA Class of 2025: Christopher Pitts, Washington University (Olin)</a>
-            <p class="news-date"><i>June 21, 2024</i></p>
-            <p class="news-description" style="font-size: large; margin-left: 20px;">Aside from your immersion and classmates, what was the key part of Washington Olin’s MBA programming that led you to choose this business school and why was it so important to you? The most important aspect of Olin’s programming was the opportunity to build a network of high performers. I keep track of my personal and professional development by taking assessments of the people around me. Olin has not disappointed, whether it be students, alumni or professors.</p>
+        <!--content-->
+        <div class="w3-content news-container" style="max-width:1200px; margin-top:60px; margin-bottom:60px;">
+            <div class="news-item">
+                <a href="https://poetsandquants.com/2024/06/21/meet-the-mba-class-of-2025-christopher-pitts-washington-university-olin/"
+                    class="news-title" style="font-size:x-large; font-weight: bold;">Meet the MBA Class of 2025:
+                    Christopher Pitts, Washington University (Olin)</a>
+                <p class="news-date"><i>June 21, 2024</i></p>
+                <p class="news-description" style="font-size: large; margin-left: 20px;">Aside from your immersion and
+                    classmates, what was the key part of Washington Olin’s MBA programming that led you to choose this
+                    business school and why was it so important to you? The most important aspect of Olin’s programming
+                    was the opportunity to build a network of high performers. I keep track of my personal and
+                    professional development by taking assessments of the people around me. Olin has not disappointed,
+                    whether it be students, alumni or professors.</p>
+            </div>
+            <div class="news-item">
+                <a href="https://olin.wustl.edu/about/news-and-media/news/2024/01/new-club-promotes-entrepreneurship-through-acquisition.php"
+                    class="news-title" style="font-size: x-large; font-weight: bold;">ETA Club Promotes Entrepreneurship
+                    Through Acquisition</a>
+                <p class="news-date"><i>January 22, 2024</i></p>
+                <p class="news-description" style="font-size: large; margin-left: 20px;">For many business students,
+                    entrepreneurship dreams don’t necessarily include a startup. Instead, they’re driven by the goal of
+                    buying existing businesses and helping them grow.
+                    That path, called entrepreneurship through acquisition (ETA), is increasingly popular among MBA
+                    students, and a group of aspiring owners at Olin is banding together to promote it.</p>
+            </div>
         </div>
-        <div class="news-item">
-            <a href ="https://olin.wustl.edu/about/news-and-media/news/2024/01/new-club-promotes-entrepreneurship-through-acquisition.php" class="news-title" style="font-size: x-large; font-weight: bold;">ETA Club Promotes Entrepreneurship Through Acquisition</a>
-            <p class="news-date"><i>January 22, 2024</i></p>
-            <p class="news-description" style="font-size: large; margin-left: 20px;">For many business students, entrepreneurship dreams don’t necessarily include a startup. Instead, they’re driven by the goal of buying existing businesses and helping them grow.
-                That path, called entrepreneurship through acquisition (ETA), is increasingly popular among MBA students, and a group of aspiring owners at Olin is banding together to promote it.</p>
-        </div>
-    </div>
 
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-        <div class="w3-xlarge w3-section">
-            <a href="https://www.linkedin.com/in/christopherpitts12/" title="LinkedIn" target="_blank">
-                <i class="fa fa-linkedin w3-hover-opacity icon-padding"></i></a>
-            <a href="mailto:Chris@Maracascapital.com" title="Email">
-                <i class="fa fa-envelope w3-hover-opacity icon-padding"></i></a>
-        </div>
-        <p>© Maracas Capital 2024</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+            <div class="w3-xlarge w3-section">
+                <a href="https://www.linkedin.com/in/christopherpitts12/" title="LinkedIn" target="_blank">
+                    <i class="fa fa-linkedin w3-hover-opacity icon-padding"></i></a>
+                <a href="mailto:Chris@Maracascapital.com" title="Email">
+                    <i class="fa fa-envelope w3-hover-opacity icon-padding"></i></a>
+            </div>
+            <p>© Maracas Capital 2024</p>
+        </footer>
 
 </html>
