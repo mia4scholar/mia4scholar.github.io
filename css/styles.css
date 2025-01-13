@@ -184,15 +184,13 @@ body {
 /* Show the spacing div for mobile screens only */
 @media (max-width: 768px) {
     .mobile-spacing {
-      display: block;
-      height: 60px; /* Adjust height as needed */
+      height: 80px; /* Adjust height as needed */
     }
 }
 
 @media (max-width: 480px) {
     .mobile-spacing{
-        display: block;
-        height: 60px;;
+        height: 80px;;
     }
 }
 
