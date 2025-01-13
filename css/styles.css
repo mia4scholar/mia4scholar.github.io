@@ -169,6 +169,9 @@ body {
         font-size: 2rem;
         left: 50%;
         bottom: 10%;
+        text-align: center;
+        transform: translate(-50%, 0);
+
     }
 }
 
@@ -176,8 +179,10 @@ body {
     .title-overlay{
         font-size: 1rem;
         bottom: 10%;
+        text-align: center;
+
         left: 50%;
-        /*transform: translate(-50%, 0);*/
+        transform: translate(-50%, 0);
     }
 }
   
