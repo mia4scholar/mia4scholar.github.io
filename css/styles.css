@@ -241,22 +241,22 @@ body {
     position: absolute;
     color: white;
     font-size: 24px; /* Adjust font size as needed */
-    margin: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); /* Add shadow for better visibility */
 }
 
 /* Web version */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .header-text {
         left: 20px; /* Bottom-left for larger screens */
-        text-align: left;
+        /*text-align: left;
     }
-}
+}*/
 
 /* Mobile version */
 @media (max-width: 480px) {
     .header-text {
-        left: 50%;
+        /*left: 50%;
         transform: translateX(-50%); /* Center horizontally */
         text-align: center;
         position: static;
