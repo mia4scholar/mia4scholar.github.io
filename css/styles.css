@@ -202,12 +202,28 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+
+
+@media (min-width: 768px) {
     .w3-row {
-        display:block;    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 40px; /* Space between rows */
     }
 
-    .w3-third{
-        width: 100%;
+    .w3-third {
+        width: 30%; /* Adjust width to fit three in a row */
+    }
+}
+
+@media (max-width: 767px) {
+    .w3-row {
+        display: block;
+    }
+
+    .w3-third {
+        width: 100%; /* Full width for single column */
+        margin-bottom: 20px; /* Only space between items */
     }
 }
