@@ -246,12 +246,13 @@ body {
 }
 
 /* Web version */
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
     .header-text {
-        left: 20px; /* Bottom-left for larger screens */
-        /*text-align: left;
+        /*left: 20px; /* Bottom-left for larger screens */
+        /*text-align: left;*/
+        bottom: 20px;
     }
-}*/
+}
 
 /* Mobile version */
 @media (max-width: 480px) {
@@ -261,5 +262,6 @@ body {
         text-align: center;
         position: static;
         font-size: medium;
+        top: 50%;
     }
 }
