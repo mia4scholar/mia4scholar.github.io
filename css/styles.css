@@ -257,7 +257,7 @@ body {
 }
 
 /* Mobile version */
-@media (max-width: 767px) {
+@media (max-width: 480px) {
     .image-header {
         margin-top: 60px; /* Push header down further for the navigation bar */
     }
