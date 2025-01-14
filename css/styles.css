@@ -245,3 +245,25 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
 }
 
+/* Web version */
+@media (min-width: 768px) {
+    .image-header {
+        margin-top: 0; /* No extra space for navigation on larger screens */
+    }
+    .header-text {
+        left: 20px; /* Bottom-left for larger screens */
+        text-align: left;
+    }
+}
+
+/* Mobile version */
+@media (max-width: 767px) {
+    .image-header {
+        margin-top: 60px; /* Push header down further for the navigation bar */
+    }
+    .header-text {
+        left: 50%;
+        transform: translateX(-50%); /* Center horizontally */
+        text-align: center;
+    }
+}
