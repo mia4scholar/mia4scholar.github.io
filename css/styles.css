@@ -265,5 +265,6 @@ body {
         left: 50%;
         transform: translateX(-50%); /* Center horizontally */
         text-align: center;
+        position: static;
     }
 }
