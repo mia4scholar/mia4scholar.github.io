@@ -227,3 +227,21 @@ body {
         margin-bottom: 15px; /* Only space between items */
     }
 }
+
+.image-header {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    align-items: flex-end; /* Align content vertically */
+}
+
+/* Text styling */
+.header-text {
+    position: absolute;
+    color: white;
+    font-size: 24px; /* Adjust font size as needed */
+    margin: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
