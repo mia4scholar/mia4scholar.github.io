@@ -204,6 +204,10 @@ body {
 
 @media (max-width: 768px) {
     .w3-row {
-        margin-bottom: 40px; /* Reduce the space between rows */
+        display:block;    
+    }
+
+    .w3-third{
+        width: 100%;
     }
 }
