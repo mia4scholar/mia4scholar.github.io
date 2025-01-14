@@ -209,7 +209,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        row-gap: 40px; /* Space between rows */
+        row-gap: 80px; /* Space between rows */
     }
 
     .w3-third {
