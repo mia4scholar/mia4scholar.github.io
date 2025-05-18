@@ -266,3 +266,22 @@ body {
         font-size: medium;
     }
 }
+
+@media (max-width: 768px) {
+    .profile-row {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 15px;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .profile-info {
+      text-align: center;
+    }
+  }
+    
+  
