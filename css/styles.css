@@ -269,19 +269,29 @@ body {
 
 @media (max-width: 768px) {
     .profile-row {
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
+      text-align: center;
     }
   
     .profile-image {
       margin-bottom: 15px;
-      margin-right: 0;
-      text-align: center;
+      align-items: center;;
     }
   
     .profile-info {
-      text-align: center;
+      padding-left: 0;
     }
   }
     
-  
+  @media (min-width: 768px) {
+    .profile-row {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .profile-info {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
